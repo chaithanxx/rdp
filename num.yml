@@ -1,0 +1,12 @@
+import yaml
+
+start_number = 10000000000
+end_number = 99999999999
+
+numbers = list(range(start_number, end_number + 1))
+
+with open("generated_numbers.yml", "w") as yaml_file:
+    yaml.dump(numbers, yaml_file)
+
+for number in numbers:
+    print(number)
